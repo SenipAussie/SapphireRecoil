@@ -127,31 +127,31 @@ namespace Sens_Sapphire_Recoil
             switch (cboWeapons.SelectedIndex)
             {
                 case 0: // AssaultRifle
-                    setWeaponInfo(AssaultRifle, 133, 29);
+                    setWeaponInfo(AssaultRifle, AssaultRifleControlTime, 133, 29);
                     break;
                 case 1: // LR300AssaultRifle
-                    setWeaponInfo(LR300AssaultRifle, 120, 29);
+                    setWeaponInfo(LR300AssaultRifle, LRControlTime, 120, 29);
                     break;
                 case 2: // SemiAssultRifle
-                    setWeaponInfo(SemiAssultRifle, 175, 1);
+                    setWeaponInfo(SemiAssultRifle, SemiControlTime, 175, 1);
                     break;
                 case 3: // CustomSMG
-                    setWeaponInfo(CustomSMG, 100, 23);
+                    setWeaponInfo(CustomSMG, CustomSMGControlTime, 100, 23);
                     break;
                 case 4: // MP5A4
-                    setWeaponInfo(MP5A4, 120, 29);
+                   setWeaponInfo(MP5A4, MP5A4ControlTime, 120, 29);
                     break;
                 case 5: // Thompson
-                    setWeaponInfo(Thompson, 130, 19);
+                    setWeaponInfo(Thompson, ThompsonControlTime, 130, 19);
                     break;
                 case 6: // M92
-                    setWeaponInfo(M92, 100, 1);
+                    setWeaponInfo(M92, M92Time, 100, 1);
                     break;
                 case 7: // M39
-                    setWeaponInfo(M39, 200, 1);
+                    setWeaponInfo(M39, M39ControlTime, 200, 1);
                     break;
                 case 8: // M249
-                    setWeaponInfo(M249, 120, 99);
+                    setWeaponInfo(M249, M249ControlTime, 120, 99);
                     break;
             }
         }
@@ -170,10 +170,10 @@ namespace Sens_Sapphire_Recoil
                     setScopeAndMultiplier("Holo scope", 1.2);
                     break;
                 case 3: // 8x
-                    setScopeAndMultiplier("8x scope", 3.84);
+                    setScopeAndMultiplier("8x scope", 3.83721);
                     break;
                 case 4: // 16x
-                    setScopeAndMultiplier("16x scope", 7.68);
+                    setScopeAndMultiplier("16x scope", 7.65116);
                     break;
             }
         }

@@ -35,7 +35,7 @@ namespace Sens_Sapphire_Recoil
                         {
                             if (!IsKeyDown(Keys.LButton)) break;
                             Smoothing(isMuzzleBoost(getShootingMS()),
-                            isMuzzleBoost(ShotDelay(i)),
+                            isMuzzleBoost(getShotDelay(i)),
                             (int)((((getRecoilX(i) + GetRandomNumber(0.0, getRandomness())) / 4) / getSensitivity()) * getScopeMulitplier() * getBarrelMultiplier() * getFOVMultiplier()),
                             (int)((((getRecoilY(i) + GetRandomNumber(0.0, getRandomness())) / 4) / getSensitivity()) * getScopeMulitplier() * getBarrelMultiplier() * getFOVMultiplier()));
                             mouse_event(0x0001, 0, 0, 0, UIntPtr.Zero);

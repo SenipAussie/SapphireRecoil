@@ -27,6 +27,7 @@ namespace Sens_Sapphire_Recoil
 
         // General Variables
         private static int[,] ActiveRecoil { get; set; } = { { 0, 0 } };
+        private static double[] Delay { get; set; } = { 0 };
         private static int ShootingMS { get; set; } = 0;
         private static int Ammo { get; set; } = 0;
 
@@ -41,9 +42,10 @@ namespace Sens_Sapphire_Recoil
         private static double Sensitivity { get; set; } = 1.0;
         private static double FOV { get; set; } = 90.0;
 
-        public static void setWeaponInfo(int[,] ActiveRecoilTable, int ShootingMSValue, int AmmoValue)
+        public static void setWeaponInfo(int[,] ActiveRecoilTable, double[] DelayValue, int ShootingMSValue, int AmmoValue)
         {
             ActiveRecoil = ActiveRecoilTable;
+            Delay = DelayValue;
             ShootingMS = ShootingMSValue;
             Ammo = AmmoValue;
         }
@@ -59,13 +61,8 @@ namespace Sens_Sapphire_Recoil
         public static int getShootingMS()
         { return ShootingMS; }
 
-        public static double ShotDelay(int Bullet)
-        {
-            if (ShootingMS == 133)
-                return RecoilTables.AssaultRifleControlTime[Bullet];
-            else
-                return ShootingMS;
-        }
+        public static double getShotDelay(int Bullet)
+        { return Delay[Bullet]; }
 
         // AMMO
         public static int getAmmo()
