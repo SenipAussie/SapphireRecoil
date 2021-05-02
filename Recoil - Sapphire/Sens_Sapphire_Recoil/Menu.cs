@@ -11,7 +11,7 @@ namespace Sens_Sapphire_Recoil
         public SapphireRecoil()
         {
             InitializeComponent();
-            lblInfo.Text = "Type: Public | Built: " + DateTime.Now;
+            lblInfo.Text = "Type: Public | Version: 1.2";
         }
         #region MoveablePanels
         // Ignore this area of the code, It just allows users to move the form around without a standard boarder.
@@ -139,7 +139,7 @@ namespace Sens_Sapphire_Recoil
                     setWeaponInfo(CustomSMG, CustomSMGControlTime, 100, 23);
                     break;
                 case 4: // MP5A4
-                   setWeaponInfo(MP5A4, MP5A4ControlTime, 120, 29);
+                   setWeaponInfo(MP5A4, MP5A4ControlTime, 100, 29);
                     break;
                 case 5: // Thompson
                     setWeaponInfo(Thompson, ThompsonControlTime, 130, 19);
